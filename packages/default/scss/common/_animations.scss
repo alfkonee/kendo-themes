@@ -1,9 +1,10 @@
 @include exports('animation/container') {
 
     .k-animation-container {
-        position: absolute;
+        position: relative;
         overflow: hidden;
         z-index: 100;
+        display: inline-block;
 
         &-fixed {
             position: fixed;
