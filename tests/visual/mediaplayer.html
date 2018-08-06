@@ -8,30 +8,187 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
 
-    <script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
-    <script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+    <style>
+        #test-area {
+            max-width: 800px;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="test-area">
-        <div id="mediaplayer" style="height:360px; width:640px"></div>
+
+        <div class="section">
+            <div id="mediaplayer" style="height:360px" data-role="mediaplayer" class="k-mediaplayer k-widget" role="region" tabindex="0">
+                <div class="k-mediaplayer-titlebar" role="heading" style="display: block;">Digital Factory</div>
+                <div class="k-mediaplayer-toolbar-wrap" style="display: block;">
+                    <div class="k-widget k-slider k-slider-horizontal k-mediaplayer-seekbar k-state-default">
+                        <div class="k-slider-wrap">
+                            <div class="k-slider-track" style="width: 640px;">
+                                <div class="k-slider-selection" style="width: 222px;">
+                                    <!-- -->
+                                </div>
+                                <a href="#" class="k-draghandle" title="" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="-10781599.848"
+                                    tabindex="0" data-role="draggable" style="left: 215px;" aria-valuetext="00:00:18">Drag</a>
+                            </div>
+                            <input class="k-mediaplayer-seekbar" value="0" title="seekbar" type="text" data-role="slider" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="k-mediaplayer-toolbar k-toolbar k-widget" data-role="toolbar" data-uid="a8975872-a209-41b1-b4f0-3ba07b9777f2"
+                        tabindex="0" style="width: auto;">
+                        <a href="" tabindex="0" class="k-play-button k-button k-button-icon k-bare" data-uid="05fd8c14-9d8f-4a9f-b956-b6a16b6034b7"
+                            data-overflow="auto" title="Play" aria-label="Play">
+                            <span class="k-icon k-i-play"></span>
+                        </a>
+                        <div class="k-mediaplayer-currenttime-wrap" data-uid="913b10f3-4b81-4513-8605-aa7e30cc5670" data-overflow="never">
+                            <span class="k-mediaplayer-currenttime">00:18</span> /
+                            <span class="k-mediaplayer-duration">00:55</span>
+                        </div>
+                        <div class="k-toolbar-spacer k-separator" data-uid="10d98824-e1d0-4eaf-8dce-41534a33602e" data-overflow="auto">&nbsp;</div>
+                        <div class="k-align-right">
+                            <a href="" tabindex="0" class="k-volume-button k-button k-button-icon k-bare" data-uid="fce1035d-9c7d-4e20-b8c3-3b6f7a911800"
+                                data-overflow="auto" title="Mute" aria-label="Mute">
+                                <span class="k-icon k-i-volume-up"></span>
+                            </a>
+                            <div class="k-mediaplayer-volume-wrap" data-uid="53080bb0-ba71-416c-853c-2b5c5d5a77c9" data-overflow="never">
+                                <div class="k-widget k-slider k-slider-horizontal k-mediaplayer-volume k-state-default" style="width: 87px;">
+                                    <div class="k-slider-wrap">
+                                        <div class="k-slider-track" style="width: 85px;">
+                                            <div class="k-slider-selection" style="width: 85px;">
+                                                <!-- -->
+                                            </div>
+                                            <a href="#" class="k-draghandle" title="" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" tabindex="0"
+                                                data-role="draggable" style="left: 78px;">Drag</a>
+                                        </div>
+                                        <input class="k-mediaplayer-volume" title="volume" type="text" data-role="slider" style="width: 87px; display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-mediaplayer-quality-wrap" data-uid="656ebd6e-f879-45d6-a1cc-942bd2a6442b" data-overflow="never">
+                                <span title="Quality" class="k-widget k-dropdown k-header k-mediaplayer-quality k-button k-bare" unselectable="on" role="listbox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-live="polite" aria-disabled="false"
+                                    aria-busy="false" style="display: block;" aria-activedescendant="d634e97d-5ab5-4103-a779-42fa3208d5f5">
+                                    <span unselectable="on" class="k-dropdown-wrap k-state-default">
+                                        <span unselectable="on" class="k-input">360p</span>
+                                        <span unselectable="on" class="k-select" aria-label="select">
+                                            <span class="k-icon k-i-hd"></span>
+                                        </span>
+                                    </span>
+                                    <input class="k-mediaplayer-quality" title="video quality" data-role="dropdownlist" style="display: none;">
+                                </span>
+                            </div>
+                            <a href="" tabindex="0" class="k-fullscreen-button k-button k-button-icon k-bare" data-uid="0cdfc801-f57e-404f-a582-7d803d1431a3"
+                                data-overflow="auto" title="Full Screen" aria-label="Full Screen">
+                                <span class="k-icon k-i-full-screen"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-animation-container" style="width: 86px; height: 88px; box-sizing: content-box; overflow: hidden; z-index: 12; top: 243.453px; left: 566.328px; display: none; position: absolute;"
+                    aria-hidden="true">
+                    <div class="k-list-container k-popup k-group k-reset k-quality-list" data-role="popup" aria-hidden="true" style="position: absolute; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-stretch: 100%; font-style: normal; font-weight: 400; line-height: 24.08px; width: 28px; min-width: 28px; white-space: normal; height: auto; display: none; transform: translateY(86px);">
+                        <div class="k-group-header" style="display:none"></div>
+                        <div class="k-list-scroller" unselectable="on" style="height: auto;">
+                            <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox">
+                                <li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="0"
+                                    id="d634e97d-5ab5-4103-a779-42fa3208d5f5">360p</li>
+                                <li tabindex="-1" role="option" unselectable="on" class="k-item" aria-selected="false" data-offset-index="1">480p</li>
+                                <li tabindex="-1" role="option" unselectable="on" class="k-item" aria-selected="false" data-offset-index="2">720p</li>
+                            </ul>
+                        </div>
+                        <div class="k-nodata" style="display: none;">
+                            <div>No data found.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-mediaplayer-overlay"></div>
+                <video class="k-mediaplayer-media" src="http://telerik-media.s3.amazonaws.com/digital-factory/digital-factory-360.mp4" style="width: 100%; height: 100%;">
+                </video>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="mediaplayer" style="height:360px" data-role="mediaplayer" class="k-mediaplayer k-widget" role="region" tabindex="0">
+                <iframe class="k-mediaplayer-yt" style="width: 100%; height: 100%;" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media"
+                    title="YouTube video player" width="642" height="360" src="" id="widget2"></iframe>
+                <div class="k-mediaplayer-titlebar" role="heading" style="display: block;">Recap of Progress Ringing The Bell at Nasdaq (2016)</div>
+                <div class="k-mediaplayer-toolbar-wrap" style="display: block;">
+                    <div class="k-widget k-slider k-slider-horizontal k-mediaplayer-seekbar k-state-default">
+                        <div class="k-slider-wrap">
+                            <div class="k-slider-track" style="width: 640px;">
+                                <div class="k-slider-selection" style="width: 357px;">
+                                    <!-- -->
+                                </div>
+                                <a href="#" class="k-draghandle" title="" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="-10743671.854030518"
+                                    tabindex="0" data-role="draggable" style="left: 350px;" aria-valuetext="00:00:56">Drag</a>
+                            </div>
+                            <input class="k-mediaplayer-seekbar" value="0" title="seekbar" type="text" data-role="slider" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="k-mediaplayer-toolbar k-toolbar k-widget" data-role="toolbar" data-uid="5ffa17c5-97de-4fb4-8c9f-214f9cee460b"
+                        tabindex="0" style="width: auto;">
+                        <a href="" tabindex="0" class="k-play-button k-button k-button-icon k-bare" data-uid="a9a308da-8a61-464e-8211-35b6f992490d"
+                            data-overflow="auto" title="Pause" aria-label="Pause">
+                            <span class="k-icon k-i-pause"></span>
+                        </a>
+                        <div class="k-mediaplayer-currenttime-wrap" data-uid="6155ad82-11c2-4db1-93b7-afa4b4399a1e" data-overflow="never">
+                            <span class="k-mediaplayer-currenttime">00:56</span> /
+                            <span class="k-mediaplayer-duration">01:36</span>
+                        </div>
+                        <div class="k-toolbar-spacer k-separator" data-uid="73d5f1c9-2611-4dea-bd84-df080b2415cc" data-overflow="auto">&nbsp;</div>
+                        <div class="k-align-right">
+                            <a href="" tabindex="0" class="k-volume-button k-button k-button-icon k-bare" data-uid="d7c78fc0-a8ba-4866-858b-e76cc698a92e"
+                                data-overflow="auto" title="Mute" aria-label="Mute">
+                                <span class="k-icon k-i-volume-up"></span>
+                            </a>
+                            <div class="k-mediaplayer-volume-wrap" data-uid="f0199b5a-b4eb-44b0-9079-097a1df15248" data-overflow="never">
+                                <div class="k-widget k-slider k-slider-horizontal k-mediaplayer-volume k-state-default" style="width: 87px;">
+                                    <div class="k-slider-wrap">
+                                        <div class="k-slider-track" style="width: 85px;">
+                                            <div class="k-slider-selection" style="width: 85px;">
+                                                <!-- -->
+                                            </div>
+                                            <a href="#" class="k-draghandle" title="" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" tabindex="0"
+                                                data-role="draggable" style="left: 78px;">Drag</a>
+                                        </div>
+                                        <input class="k-mediaplayer-volume" title="volume" type="text" data-role="slider" style="width: 87px; display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-mediaplayer-quality-wrap" data-uid="bbd03900-c300-4b2d-a6ef-a2ea9c9b1363" data-overflow="never">
+                                <span title="Quality" class="k-widget k-dropdown k-header k-mediaplayer-quality k-button k-bare" unselectable="on" role="listbox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-live="polite" aria-disabled="false"
+                                    aria-busy="false" style="display: none;">
+                                    <span unselectable="on" class="k-dropdown-wrap k-state-default">
+                                        <span unselectable="on" class="k-input"></span>
+                                        <span unselectable="on" class="k-select" aria-label="select">
+                                            <span class="k-icon k-i-hd"></span>
+                                        </span>
+                                    </span>
+                                    <input class="k-mediaplayer-quality" title="video quality" data-role="dropdownlist" style="display: none;">
+                                </span>
+                            </div>
+                            <a href="" tabindex="0" class="k-fullscreen-button k-button k-button-icon k-bare" data-uid="96993a52-e661-4bf4-b7a1-10eed9f98303"
+                                data-overflow="auto" title="Full Screen" aria-label="Full Screen">
+                                <span class="k-icon k-i-full-screen"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-list-container k-popup k-group k-reset k-quality-list" data-role="popup" aria-hidden="true" style="display: none; position: absolute;">
+                    <div class="k-group-header" style="display:none"></div>
+                    <div class="k-list-scroller" unselectable="on">
+                        <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"></ul>
+                    </div>
+                    <div class="k-nodata" style="">
+                        <div>No data found.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <script>
-        kendo.init($(".container"));
-
-        var mediaplayer = $("#mediaplayer").kendoMediaPlayer({
-            autoPlay: true,
-            loop: true,
-            navigatable: true,
-            mute: true,
-            media: {
-                title: "Recap of Progress Ringing The Bell at Nasdaq (2016)",
-                source: "https://www.youtube.com/watch?v=tc3xhD24iTU"
-            }
-        }).data("kendoMediaPlayer");
-    </script>
 
 </body>
 
